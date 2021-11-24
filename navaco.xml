@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="1.0" type="plugin" group="vmpayment" method="upgrade">
+    <name>navaco</name>
+    <author>Navaco</author>
+	<creationDate>Nov 2021</creationDate>
+	<copyright>Copyright 2021 Navaco Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>info@navaco.me</authorEmail>
+	<authorUrl>http://navaco.me</authorUrl>
+	<version>0.0.1</version>
+    <description>پلاگین پرداخت برای ویرچومارت</description>
+
+    <files>
+        <filename plugin="rasacards">navaco.php</filename>
+        <folder>helper</folder>
+        <folder>navaco</folder>
+    </files>
+
+    <vmconfig>
+        <fields name="params">
+            <fieldset name="payment"  addfieldpath="/administrator/components/com_virtuemart/fields">
+				<field name="merchant_id" type="text" size="64" label="شناسه درگاه" description="شانسه درگاه خود را وارد کنید" default=""/>
+				<field name="username" type="text" size="64" label="نام کاربری درگاه" description="نام کاربری درگاه خود را وارد کنید" default=""/>
+				<field name="password" type="text" size="64" label="گذرواژه درگاه" description="گذرواژه درگاه خود را وارد کنید" default=""/>
+            </fieldset>
+        </fields>
+    </vmconfig>
+</extension>
