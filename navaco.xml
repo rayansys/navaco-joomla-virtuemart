@@ -11,7 +11,7 @@
     <description>پلاگین پرداخت برای ویرچومارت</description>
 
     <files>
-        <filename plugin="rasacards">navaco.php</filename>
+        <filename plugin="navaco">navaco.php</filename>
         <folder>helper</folder>
         <folder>navaco</folder>
     </files>
