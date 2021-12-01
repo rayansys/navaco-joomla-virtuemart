@@ -97,7 +97,7 @@ class plgVmPaymentNavaco extends vmPSPlugin {
             "CARDACCEPTORCODE"=>$MerchantID,
             "USERNAME"=>$username,
             "USERPASSWORD"=>$password,
-            "PAYMENTID"=>$id,
+            "PAYMENTID"=>$order['details']['BT']->virtuemart_order_id,
             "AMOUNT"=>$Amount,
             "CALLBACKURL"=>($CallbackURL),
         ];
