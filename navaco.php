@@ -11,7 +11,7 @@ if (!class_exists ('checkHack')) {
 
 
 class plgVmPaymentNavaco extends vmPSPlugin {
-    private $url = "http://79.174.161.132:8181/nvcservice/Api/v2/";
+    private $url = "https://fcp.shaparak.ir/nvcservice/Api/v2/";
     function __construct (& $subject, $config) {
         parent::__construct ($subject, $config);
         $this->_loggable = TRUE;
